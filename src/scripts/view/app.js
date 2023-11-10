@@ -27,6 +27,23 @@ class App {
     const page = routes[url];
     this._content.innerHTML = await page.render();
     await page.afterRender();
+
+    document.body.addEventListener('click', (event) => {
+      const { target } = event;
+      if (target.matches('.skip-link')) {
+        event.preventDefault();
+        const targetElement = document.getElementById('mainContent');
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      } else if (target.matches('.cta')) {
+        event.preventDefault();
+        const targetElement = document.getElementById('mainContent'); // Ganti dengan ID atau class yang sesuai
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      } else if (target.matches('.restaurants-link')) {
+        event.preventDefault();
+        const targetElement = document.getElementById('mainContent'); // Ganti dengan ID atau class yang sesuai
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
   }
 }
 

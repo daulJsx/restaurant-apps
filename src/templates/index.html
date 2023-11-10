@@ -17,7 +17,6 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"
     />
-    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
 
     <title>Food Heaven</title>
   </head>
@@ -25,7 +24,13 @@
   <body>
     <!-- Navbar Start -->
     <header>
-      <a href="#list" class="skip-link">Skip to Content</a>
+      <a
+        href="#mainContent"
+        tabindex="0"
+        aria-label="Jump to Content Button"
+        class="skip-link"
+        >Skip to Content</a
+      >
 
       <nav class="navbar">
         <div class="navbar__brand">
@@ -44,45 +49,108 @@
         </div>
 
         <div class="navbar__end" id="navigationDrawer">
-          <a href="/" tabindex="0" aria-label="Home">Home </a>
+          <a href="#" tabindex="0" aria-label="Home">Home </a>
           <a
             href="https://github.com/daulJsx"
             target="_blank"
             rel="noreferrer"
             tabindex="0"
             aria-label="About Us"
-            >About Us</a
           >
-          <a href="#list" tabindex="0" aria-label="Restaurants">Restaurants</a>
-          <a href="#/liked-heaven" tabindex="0" aria-label="Favorite"
-            >Favorite</a
+            About Us
+          </a>
+          <a
+            href="#mainContent"
+            class="restaurants-link"
+            tabindex="0"
+            aria-label="Restaurants"
           >
+            Restaurants
+          </a>
+          <a href="#/liked-heaven" tabindex="0" aria-label="Favorite">
+            Favorite
+          </a>
         </div>
       </nav>
     </header>
     <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <div class="left">
+        <h1 tabindex="0"><span>Discover </span>stuff of your life!</h1>
+        <p tabindex="0">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia,
+          voluptatem.
+        </p>
+        <a
+          href="#mainContent"
+          tabindex="0"
+          class="cta"
+          aria-label="Get Started"
+        >
+          Get Started
+        </a>
+      </div>
+
+      <div class="right"></div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2 tabindex="0">About Us</h2>
+
+      <div class="row">
+        <div class="about__img">
+          <img
+            tabindex="0"
+            loading="lazy"
+            src="images/heros/hero-image_4.jpg"
+            alt="About us"
+          />
+        </div>
+
+        <div class="about__content">
+          <h3 tabindex="0">Why must <span>Food Heaven </span> ?</h3>
+          <p tabindex="0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            inventore ab voluptatum laborum fuga. Possimus rerum, earum
+            cupiditate aspernatur cum, dignissimos commodi exercitationem
+            adipisci ullam tempore laboriosam praesentium deleniti non.
+          </p>
+          <p tabindex="0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            delectus voluptatum dolorem commodi numquam. Facere, dolore. Quasi
+            quaerat eos veniam minima molestias, perferendis officia iste odio
+            exercitationem aspernatur incidunt placeat.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
 
     <main id="mainContent"></main>
 
     <!-- Footer Section Start -->
     <footer>
       <div class="socials">
-        <a href="#" tabindex="0" aria-label="Instagram"
-          ><i data-feather="instagram"></i
-        ></a>
-        <a href="#" tabindex="0" aria-label="Twitter"
-          ><i data-feather="twitter"></i
-        ></a>
-        <a href="#" tabindex="0" aria-label="Facebook"
-          ><i data-feather="facebook"></i
-        ></a>
+        <a href="#" tabindex="0" aria-label="Instagram">
+          <i data-feather="instagram"></i>
+        </a>
+        <a href="#" tabindex="0" aria-label="Twitter">
+          <i data-feather="twitter"></i>
+        </a>
+        <a href="#" tabindex="0" aria-label="Facebook">
+          <i data-feather="facebook"></i>
+        </a>
       </div>
 
       <div class="links">
-        <a href="#home" tabindex="0" aria-label="Home">Home</a>
+        <a href="#" tabindex="0" aria-label="Home">Home</a>
         <a href="#about" tabindex="0" aria-label="About Us">About Us</a>
         <a href="#list" tabindex="0" aria-label="Restaurants">Restaurants</a>
-        <a href="#" tabindex="0" aria-label="Favorite">Favorite</a>
+        <a href="#/liked-heaven" tabindex="0" aria-label="Favorite">Favorite</a>
       </div>
 
       <div class="credit">
@@ -90,7 +158,5 @@
       </div>
     </footer>
     <!-- Footer Section End -->
-
-    <script src="js/script.js"></script>
   </body>
 </html>
