@@ -8,7 +8,10 @@ import addNewReview from '../../utils/add-review';
 const Detail = {
   async render() {
     return `
+    <a href="#mainContentDetail" class="skip-link">Skip to Content</a>
+    <main tabindex="0" id="mainContentDetail">
       <div id="restaurant-detail" class="restaurant__detail"></div>
+    </main>
       <div id="like-btn"></div>
 
       <div class="review__form">
@@ -59,6 +62,14 @@ const Detail = {
       event.preventDefault();
       addNewReview();
     });
+
+    document
+      .querySelector('.skip-link')
+      .addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetElement = document.getElementById('mainContentDetail');
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      });
   },
 };
 

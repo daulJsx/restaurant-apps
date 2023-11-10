@@ -3,6 +3,7 @@ import loadCatalogue from '../../utils/load-catalogue';
 const Main = {
   async render() {
     return `
+    <main tabindex="0" id="mainContent">
       <!-- Hero Section Start -->
       <section class="hero" id="home">
         <div class="left">
@@ -62,6 +63,7 @@ const Main = {
         </div>
       </section>
       <!-- List Section End -->
+    </main>
     `;
   },
 

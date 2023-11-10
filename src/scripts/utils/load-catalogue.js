@@ -14,8 +14,8 @@ const loadCatalogue = async ({ catalogue }) => {
 
       restaurantDiv.innerHTML = `
         <figure class="heaven__card">
-          <a href="/#/detail/${restaurant.id}">
-            <img class="card__image lazyload" src="${imageUrl}" alt="${restaurant.name}" tabindex="0">
+          <a href="#/detail/${restaurant.id}">
+            <img class="card__image lazyload" src="${imageUrl}" alt="${restaurant.name}" tabindex="0" />
             <div class="card__content">
               <blockquote>
                 <p class="restaurant__name">

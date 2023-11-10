@@ -4,6 +4,7 @@ import { createRestaurantItemTemplate } from '../../templates/template-creator';
 const Favorite = {
   async render() {
     return `
+    <main tabindex="0" id="mainContent">
       <section>
         <div class="favorite__content">
           <h2 class="favorite__header"></h2>
@@ -12,6 +13,7 @@ const Favorite = {
           </div>
         </div>
       </section>
+    </main>
     `;
   },
 
