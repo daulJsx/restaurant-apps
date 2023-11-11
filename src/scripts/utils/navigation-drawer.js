@@ -6,7 +6,6 @@ const NavigationDrawer = {
     });
 
     content.addEventListener('click', (event) => {
-      event.preventDefault();
       this._closeDrawer(event, drawer);
     });
   },
