@@ -30,18 +30,18 @@ class App {
 
     document.body.addEventListener('click', (event) => {
       const { target } = event;
+
       if (target.matches('.skip-link')) {
         event.preventDefault();
         const targetElement = document.getElementById('mainContent');
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      } else if (target.matches('.cta')) {
+        targetElement.tabIndex = -1;
+        targetElement.focus();
+      } else if (target.matches('.cta') || target.matches('.restaurants-link')) {
         event.preventDefault();
-        const targetElement = document.getElementById('mainContent'); // Ganti dengan ID atau class yang sesuai
+        const targetElement = document.getElementById('mainContent');
         targetElement.scrollIntoView({ behavior: 'smooth' });
-      } else if (target.matches('.restaurants-link')) {
-        event.preventDefault();
-        const targetElement = document.getElementById('mainContent'); // Ganti dengan ID atau class yang sesuai
-        targetElement.scrollIntoView({ behavior: 'smooth' });
+        targetElement.tabIndex = -1;
+        targetElement.focus();
       }
     });
   }

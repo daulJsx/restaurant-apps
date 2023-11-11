@@ -4,14 +4,11 @@ import { createRestaurantItemTemplate } from '../../templates/template-creator';
 const Main = {
   async render() {
     return `
-    
       <!-- List Section Start -->
-     
         <section id="list" class="list">
           <h2 tabindex="0">Popular Heaven</h2>
           <div class="row" id="restaurant-list"></div>
         </section>
-      
       <!-- List Section End -->
     `;
   },
