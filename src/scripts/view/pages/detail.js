@@ -8,7 +8,6 @@ import addNewReview from '../../utils/add-review';
 const Detail = {
   async render() {
     return `
-      <a href="#mainContent" class="skip-link">Skip to Content</a>
       <div id="restaurant-detail" class="restaurant__detail">
       </div>
       <div id="like-btn"></div>
