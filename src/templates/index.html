@@ -67,9 +67,7 @@
           >
             Restaurants
           </a>
-          <a href="#/liked-heaven" tabindex="0" aria-label="Favorite">
-            Favorite
-          </a>
+          <a href="#/like" tabindex="0" aria-label="Favorite"> Favorite </a>
         </div>
       </nav>
     </header>
@@ -103,12 +101,24 @@
 
       <div class="row">
         <div class="about__img">
-          <img
-            tabindex="0"
-            loading="lazy"
-            src="images/heros/hero-image_4.jpg"
-            alt="About us"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 600px)"
+              srcset="images/heros/hero-image_4.webp"
+            />
+            <source
+              type="image/jpeg"
+              media="(max-width: 600px)"
+              srcset="images/heros/hero-image_4-small.jpg"
+            />
+            <img
+              tabindex="0"
+              loading="lazy"
+              src="images/heros/hero-image_4-large.jpg"
+              alt="About us"
+            />
+          </picture>
         </div>
 
         <div class="about__content">

@@ -152,7 +152,7 @@ section {
 }
 
 .hero .left h1,
-.restaurant__title,
+header .restaurant__name,
 .restaurant__info h3 {
   font-family: "Monoton", cursive;
 }
@@ -260,7 +260,7 @@ section {
 /* About Section */
 
 /* detail page */
-.restaurant__title {
+header .restaurant__name {
   margin-top: 8rem;
   font-size: 2.5rem;
   text-align: center;
